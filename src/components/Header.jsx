@@ -16,7 +16,7 @@ const Header = () => {
         <nav className={`header__nav ${show ? "show" : ""}`} role="navigation" aria-label="메인메뉴">
           <ul>
             {headerNav.map((nav, key) => (
-              <li key={key}><a href="{nav.url}">{nav.title}</a></li>
+              <li key={key}><a href={nav.url}>{nav.title}</a></li>
             ))}          
           </ul>
         </nav>
